@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="settings.css" class="css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="./settings.js" class="js">
+
+    <button id="notificationsBtn" onclick="oi()">Notifications</button>
+
+    <div class="row topMenu gx-0">
+        <h1 style="height: 100%;" class="col-12 d-flex justify-content-center align-items-center">Settings</h1>
+    </div>
+    
+<div class="all d-flex justify-content-center align-items-center">
+    
+    <div class="container">
+
+        <div class="allSettings">
+
+        <div class="row ProfileInfo d-flex justify-content-center align-items-center">
+            <div class="col-12 col-sm-9 col-md-8 col-lg-6 d-flex justify-content-center align-items-center">
+                <div class="ProfileInfoLeft col-8">
+                    <div class="d-flex titles">
+                        <h2 style="padding-right: 7px;" >Profile</h2>
+                        <img style="width: 18px;" src="./img/edit.svg" alt="edit">
+                    </div>
+                    <div>
+                        <p>Diogo Guimarães</p>
+                        <p>Biography sobre mim e porque eu sou incrível</p>
+                    </div>
+                </div>
+                <div class="ProfileInfoRight col-4 d-flex justify-content-end">
+                    <img id="profilePic" style="width:60px" src="./ex.jpeg" alt="person">
+                </div>
+            </div>
+        </div>
+
+        <!--  -->
+
+        <div class="row SystemInfo d-flex justify-content-center align-items-center">
+            <div class="col-12 col-sm-9 col-md-8 col-lg-6 d-flex justify-content-center align-items-start flex-column">
+
+                <div class="titles">
+                    <h2>System</h2>
+                </div> 
+
+                <div style="width:100%; margin-bottom: 2vh;" class="d-flex justify-content-center align-items-center">
+                    <h3 class="col-10" id="notificationsText">Notifications</h2>
+                   <input type="radio" id="" name="o">
+                   <button style="height: 12px; border-radius: 50%; border: none;" onclick="clearSelection('o')"></button>
+                </div>  
+
+                <div style="width:100%" class="d-flex justify-content-center align-items-center">
+                    <h3 class="col-10">Daily Reminder</h2>
+                    <input type="radio" id="" name="i">
+                    <button style="height: 12px; border-radius: 50%; border: none;" onclick="clearSelection('i')"></button>
+                </div>   
+
+
+            </div>
+        </div>
+
+    <div class="row d-flex justify-content-center align-items-center">
+        <div id="ideasBtn" class="col-11 col-sm-10 col-md-8 col-lg-6">
+            <button class="buttons d-flex justify-content-center align-items-center"><span><img  class="idea" style="width: 30px; padding-bottom: 2px;" src="./img/idea.svg" alt="idea"></span>Give Us Ideas</button>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 10vh">
+        <h2 style="color:#ff5f5f; text-align: center;">Log Out</h2>
+    </div>
+
+    </div>
+
+</div>
+
+<script>
+const clearSelection = (name) => {
+  const radioBtns = document.querySelectorAll(
+          "input[type='radio'][name='" + name + "']");
+  radioBtns.forEach((radioBtn) => {
+    if (radioBtn.checked === true)
+      radioBtn.checked = false;
+  });
+};
+
+
+</script>
+
+</body>
+
+</html>

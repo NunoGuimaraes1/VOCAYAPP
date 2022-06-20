@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --black--: #111111;
+  --gray--: #e8e8e8;
+  --blue--: #005bbb;
+  --red--: #fd0606;
+  --boxShadow--: 0px 0px 4px 0px rgba(0, 0, 0, 0.33);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+.container {
+  padding: 30px 20px !important;
+}
+
+.all {
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+}
+
+h2 {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+}
+
+p {
+  margin: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+/* MENUS */
+
+.topMenu {
+  background-color: var(--blue--);
+  height: 55px;
+  position: fixed;
+  width: 100vw;
+}
+
+.mainMenu {
+  background-color: var(--blue--);
+  height: 60px;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+}
+
+/*  */
+
+.themeBtn:hover {
+  background-color: #0b539e;
+  transform: scale(1.01);
+}
+
+#profilePic,
+#nativeLangFlag {
+  clip-path: circle();
+}
+
+/* ProfileInfo */
+
+.userInfo,
+.progressInfo,
+.friendsInfo {
+  margin-bottom: 2.5vh;
+}
+
+.UserInfoRigth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image2 {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+}
+
+/* FriendsInfo */
+
+.friendGroup {
+  padding-right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.allFriends {
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.titles {
+  margin-bottom: 1vh;
+}
+
+.emblem {
+  height: 160px;
+  width: 120px;
+  background-color: var(--blue--);
+  border-radius: 5px;
+  padding-right: 10px;
+}
+
+.emblemsBar, .progressBar {
+  background-color: var(--gray--);
+  height: 15px;
+  border-radius: 7.5px;
+  padding: 0 !important;
+}
+
+.emblemsBarFull, .progressBarFull{
+  background-color: var(--blue--);
+  height: 100%;
+  border-radius: 7.5px;
+  width: 70%;
+}
+
+.seeAll {
+  font-weight: 12px;
+  font-weight: 500;
+}
+
+.barbar {
+  margin-top: 5vh !important;
+}
+
+.embText{
+  padding-left: 10px !important;
+}

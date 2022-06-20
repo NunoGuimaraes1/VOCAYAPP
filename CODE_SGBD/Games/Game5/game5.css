@@ -1,0 +1,164 @@
+:root {
+  --black--: #111111;
+  --gray--: #e8e8e8;
+  --blue--: #005bbb;
+  --red--: #fd0606;
+  --boxShadow--: 0px 0px 4px 0px rgba(0, 0, 0, 0.33);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.top {
+  width: 100vw;
+  position: absolute;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress {
+  height: 15px;
+  border-radius: 7.5px;
+  width: 245px;
+  background-color: var(--gray--);
+}
+.progressFull {
+  height: 100%;
+  border-radius: 7.5px;
+  width: 70%;
+  background-color: var(--blue--);
+}
+
+#close {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.bothBtns {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+}
+
+.nextBtn {
+  background-color: var(--blue--);
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  width: 230px;
+  height: 50px;
+}
+.nextBtn:hover {
+  background-color: #0b539e;
+  cursor: pointer;
+}
+.infoBtn {
+  background-color: var(--gray--);
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  font-weight: 700;
+  height: 50px;
+  width: 50px;
+}
+
+.infoBtn:hover{
+  background-color:#e1e1e1;
+  cursor: pointer;
+}
+
+.allGame {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 280px;
+  height: 500px;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+}
+
+.allCols {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 260px;
+  width: 290px;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  height: 50px;
+  background-color: var(--gray--);
+  color: var(--black--);
+  margin: 5px;
+  width: 135px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.button:hover {
+  transform: scale(1.015);
+  cursor: pointer;
+}
+
+.quest {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.photos {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+#answer{
+  border: none;
+  border-bottom: 1px solid var(--black--);
+  margin-bottom: 2vh;
+  padding: 10px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.BD_Text{
+  font-size: 18px !important;
+  font-weight: 500;
+}
+
+.fourBtns{
+margin-top: 15px;
+}

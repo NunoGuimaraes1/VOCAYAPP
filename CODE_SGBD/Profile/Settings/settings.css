@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --black--: #111111;
+  --gray--: #e8e8e8;
+  --blue--: #005bbb;
+  --red--: #fd0606;
+  --boxShadow--: 0px 0px 4px 0px rgba(0, 0, 0, 0.33);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+}
+
+.container{
+    padding: 0px 20px !important;
+}
+
+.all{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* TOP */
+
+h1 {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    
+}
+
+h2 {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+}
+
+h3{
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+}
+
+.topMenu {
+  height: 75px;
+  position: fixed;
+  width: 100vw;
+}
+
+#profilePic{
+  clip-path: circle();
+}
+
+.ProfileInfo, .SystemInfo{
+  margin-bottom: 5vh;
+}
+
+p {
+  margin: 0 !important;
+}
+
+.buttons {
+  background-color: var(--blue--);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 4vh;
+  margin-top: 5vh;
+}
+
+.titles {
+  margin-bottom: 1vh;
+}
+
+/* RADIO BUTTON */
+
+input[type='radio'] {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  outline: none;
+  border: 2px solid var(--blue--);
+}
+
+input[type="radio"]:checked {
+  background-color: var(--blue--);
+}
+
+
+
+
+
+
+

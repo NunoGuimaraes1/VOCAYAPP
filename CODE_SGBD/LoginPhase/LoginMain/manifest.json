@@ -1,0 +1,40 @@
+  {
+    "short_name": "VOCAY",
+    "name": "VOCAY",
+    "start_url": "/LoginPhase/LoginMain/loginMain.html",
+    "display": "standalone",
+    "background_color" : "#fff",
+    "description" : "Learn with vocay",
+    "id" : "/LoginPhase/LoginMain/LoginPhase/LoginMain/loginMain.html",
+
+
+    "icons": [{
+        "src": "logos-04.png",
+        "sizes": "73x72",
+        "type": "image/png"
+      }, {
+        "src": "logos-05.png",
+        "sizes": "97x96",
+        "type": "image/png"
+      }, {
+        "src": "logos-06.png",
+        "sizes": "129x128",
+        "type": "image/png"
+      }, {
+        "src": "logos-07.png",
+        "sizes": "145x144",
+        "type": "image/png"
+      }, {
+        "src": "logos-09.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }, {
+        "src": "logos-10.png",
+        "sizes": "385x384",
+        "type": "image/png"
+       }, {
+        "src": "logos-11.png",
+        "sizes": "512x512",
+        "type": "image/png"}]
+
+  }

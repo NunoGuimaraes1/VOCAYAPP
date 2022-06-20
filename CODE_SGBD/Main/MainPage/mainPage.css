@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --black--: #111111;
+  --gray--: #e8e8e8;
+  --blue--: #005bbb;
+  --red--: #fd0606;
+  --boxShadow--: 0px 0px 4px 0px rgba(0, 0, 0, 0.33);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 30px 20px !important;
+}
+
+h1 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+}
+
+p {
+  margin: 0 !important;
+}
+
+a{
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+/* MENUS */
+
+.topMenu {
+  background-color: var(--gray--);
+  height: 55px;
+  position: fixed;
+  width: 100vw;
+}
+
+.mainMenu {
+  background-color: var(--blue--);
+  height: 60px;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+}
+
+/*  */
+
+.themeImg {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background-color: var(--red--);
+  height: 90px;
+  border-radius: 5px;
+}
+
+.themeBtn {
+  width: 100%;
+  font-weight: 500;
+  color: white;
+  background-color: var(--blue--);
+  height: 35px;
+  border-radius: 5px;
+  margin: 8px 4px !important;
+}
+
+.themeBtn:hover {
+  background-color: #0b539e;
+  transform: scale(1.01);
+}
+
+#profilePic {
+  clip-path: circle();
+}
+
+.remove{
+  font-weight: 500;
+  border: none;
+  color: white;
+  background-color: var(--blue--);
+}
+
+
+/* SMARTWATCH */
+
+.first {
+  margin-top: 50px !important;
+}
+
+.hambMenu {
+  position: fixed;
+  top: 2px;
+  left: 2px;
+  z-index: 1;
+  display: none;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.modal-container {
+  opacity: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background-color: white;
+  margin: 10px;
+  border-radius: 5px;
+  width: 150px;
+  max-width: calc(100% - 20px);
+  max-height: calc(100% - 20px);
+  display: inline !important;
+}
+
+#close{
+    background-color: #005BBB; 
+    color: white; border: none; 
+    position: absolute; 
+    bottom: 10px;
+    max-width: 80vw; 
+    border-radius: 5px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 295px) {
+  .first {
+    margin-top: 0px !important;
+  }
+  .mainMenu {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .topMenu {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .hambMenu {
+    display: inline;
+  }
+}
